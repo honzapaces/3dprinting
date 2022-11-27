@@ -18,33 +18,74 @@
 			<div class="slides">
 				<section data-markdown> 	
 					<textarea data-template>
-						## FDM Printing
-						* History, Patent, Reprap
-						* How it works, How Printer looks likes
-						* Materials
-						* From Model to Printing
-						* Slicer - Gcode
-						* Common problems
+						3D Printing
+						---
+						## FFF/FDM Printing
+						---
+						## History, Patent, Reprap
+						![reprap logo](/images/300px-Reprap_logo_simple.svg.png)
+						![reprap logo](/images/oshw-logo-800-px.png.webp)
+						---
+						## FFF Printer
+						![Prusa i3](/images/prusa-i3.jpg)
+						![Prusa i3](/images/prusa-i3.jpg)
+						---
+						## Materials
+						* PLA
+						* PET-G
+						* ABS
+						* Flexibles
+						* Materials with additives
+						![Prusa i3](/images/filament.png)
+						---
+						## From Model to Printing
+						* Slicer -> Gcode
+						```
+							G92 E0 ; Reset Extruder
+							G28 ; Home all axes
+							G29 ; Probe Homing
+							G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+							G1 X0.1 Y20 Z0.3 F5000.0 ; Move to start position
+							G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line
+							G1 X0.4 Y200.0 Z0.3 F5000.0 ; Move to side a little
+							G1 X0.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line
+							G92 E0 ; Reset Extruder
+							G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
+							G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
+						```
+						---
+						## Common Problems
 					</textarea>
+					<section data-markdown>
+					<textarea data-template>
+					</textarea>
+					</section>
+				</section>
+				<section>
+					<h2>History</h2>
+					* Patent & RepRap
+					<img width="300" src="/images/RepRap_Logo_Badge_Transparent.svg">
+					<img width="300" src="oshw-logo-800-px.png.webp">
+				</section>
+				<section>
+					<h2>Vat Polymerization Printing</h2>
+					<img width="1000" src="/images/vat_polymerization.png">
+				</section>
+				<section>
+					<h2>Looking into the future</h2>
+					<iframe width="800" height="500" src="https://www.youtube.com/embed/Eci4iFoyoS4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-					## SLA Printing
-					* How it Works, How printers looks like
-					* Materials
-					* Differences between SLA/FFF where to use which one
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-					### Links
-					* Where to find models
-					* Whats next for hobby printing, looking into the future
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Other Types of Printers Tech
+						## Other Types of 3d Printing
+						* Stereolithography (SLA)
+						* Digital Light Process (DLP)
+						* Fused Deposition Modeling (FDM)
+						* Selective Laser Sintering (SLS)
+						* Multi Jet Fusion (MJF)
+						* PolyJet.
+						* Direct Metal Laser Sintering (DMLS)
+						* Electron Beam Melting (EBM)
 					</textarea>
 				</section>
 				<section data-markdown>
