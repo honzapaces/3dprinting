@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,30 +16,60 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown> 	
+				<section data-background-video="https://drive.google.com/uc?id=1IWPrYHkl-5gdtk43SR2F5DZwUvpJb4Gy"
+						 data-background-video-loop data-background-video-muted>
+					<h1>3d Printing</h1>
+				</section>
+				<section>
+					<h2>Former Lipno</h2>
+					<img src="/images/makerspace.png">
+				</section>
+				<section>
+					<h2>FFF/FDM Printing</h2>
+					<img class="r-stretch" src="/images/FDM_printing_diagram.png">
+				</section>
+				<section>
+					<h2>History</h2>
+					<img width="300" src="/images/reprap.svg">
+					<img width="300" src="/images/oshw-logo-800-px.png">
+				</section>
+				<section>
+					<section>
+						<h2>FFF Printer</h2>
+						<img class="r-stretch" src="/images/i3.png">
+					</section>
+					<section>
+					<img class="r-stretch" src="/images/3D_Printer_Extruder.png">
+					</section>
+				</section>
+				<section>
+					<h2>Materials</h2>
+					<style>
+						.container{
+							display: flex;
+						}
+						.col{
+							flex: 1;
+						}
+					</style>
+					<div class="container">
+						<div class="col">
+							<ul>
+								<li>PLA</li>
+								<li>PETG</li>
+								<li>ABS</li>
+								<li>Flexibles</li>
+								<li>Material with additives</li>
+							</ul>
+						</div>
+						<div class="col">
+							<img src="/images/filament.png">
+						</div>
+					</div>
+				</section>
+				<section data-markdown>
 					<textarea data-template>
-						3D Printing
-						---
-						## FFF/FDM Printing
-						---
-						## History, Patent, Reprap
-						![reprap logo](/images/300px-Reprap_logo_simple.svg.png)
-						![reprap logo](/images/oshw-logo-800-px.png.webp)
-						---
-						## FFF Printer
-						![Prusa i3](/images/prusa-i3.jpg)
-						![Prusa i3](/images/prusa-i3.jpg)
-						---
-						## Materials
-						* PLA
-						* PET-G
-						* ABS
-						* Flexibles
-						* Materials with additives
-						![Prusa i3](/images/filament.png)
-						---
 						## From Model to Printing
-						* Slicer -> Gcode
 						```
 							G92 E0 ; Reset Extruder
 							G28 ; Home all axes
@@ -53,23 +83,46 @@
 							G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
 							G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
 						```
-						---
-						## Common Problems
 					</textarea>
-					<section data-markdown>
-					<textarea data-template>
-					</textarea>
+				</section>
+				<section>
+					<section>
+					<h2>Common Problems</h2>
+					<img src="/images/failed+print.avif">
+					</section>
+					<section>
+						<h2>First Layer</h2>
+						<img src="/images/first_layer.jpg">
+					</section>
+					<section>
+						<h2>Layer Separation</h2>
+						<img src="/images/layerseparation.png">
+					</section>
+					<section>
+						<h2>Stringing</h2>
+						<img src="/images/stringing.avif">
+					</section>
+					<section>
+						<h2>Warping</h2>
+						<img src="/images/warping.jpg">
+					</section>
+					<section>
+						<h2>Layer Shift</h2>
+						<img src="/images/Failed-print.jpg.webp">
+					</section>
+					<section>
+						<h2>And more</h2>
+						<img src="/images/fire.webp">
 					</section>
 				</section>
 				<section>
-					<h2>History</h2>
-					* Patent & RepRap
-					<img width="300" src="/images/RepRap_Logo_Badge_Transparent.svg">
-					<img width="300" src="oshw-logo-800-px.png.webp">
+					<h2>Vat Polymerization Printing</h2>
+					<img width="1000" src="/images/sla_printing.png">
 				</section>
 				<section>
-					<h2>Vat Polymerization Printing</h2>
-					<img width="1000" src="/images/vat_polymerization.png">
+					<h2>SLA printer</h2>
+					<img width="400" src="/images/sla_printer.jpg">
+					<img width="400" src="/images/sla_display.png">
 				</section>
 				<section>
 					<h2>Looking into the future</h2>
@@ -90,16 +143,16 @@
 				</section>
 				<section data-markdown>
 					<textarea data-template>
+					## MakerSpace
+					* 3d Printing & IOT space we can all share
+					* Looking for community members
+					* [MakerSpace confluence](https://swicloud.atlassian.net/wiki/spaces/Brno/pages/3113419983/MakerSpace+-+Draft)
+					 ![Makerspace](/images/makerspace_narrow.png)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
 					## Discussion
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-					## Resources
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
 					</textarea>
 				</section>
 			</div>
